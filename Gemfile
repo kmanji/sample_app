@@ -28,7 +28,7 @@ group :assets do
   gem 'uglifier', '1.2.3'
 end
 
-gem 'therubyracer', :platform => :ruby
+gem 'therubyracer'
 gem 'jquery-rails'
 gem 'less-rails'
 
