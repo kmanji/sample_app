@@ -6,6 +6,7 @@ gem 'bcrypt-ruby', '~>3.0.1'
 gem 'gravatar_image_tag'
 gem 'twitter-bootstrap-rails'
 
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -24,10 +25,12 @@ gem 'nokogiri', '1.5.9'
 
 group :assets do
    gem 'sass-rails',   '3.2.4'
+   gem 'less-rails'
    gem 'coffee-rails', '3.2.2'
    gem 'uglifier', '1.2.3'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', :platform => :ruby
+   gem 'therubyracer'
+#, :platform => :ruby # from above
 end
 
 gem 'jquery-rails'
