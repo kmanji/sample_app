@@ -4,7 +4,7 @@ gem 'rails', '3.2.3'
 gem 'bootstrap-sass', '2.0.0'
 gem 'bcrypt-ruby', '~>3.0.1'
 gem 'gravatar_image_tag'
-gem 'twitter-bootstrap-rails'
+gem 'twitter-bootstrap-rails', '~>2.0rc0'
 
 
 # Bundle edge Rails instead:
