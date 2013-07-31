@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
 gem 'bootstrap-sass', '2.0.0'
-gem 'bcrypt-ruby', '3.0.1'
+gem 'bcrypt-ruby', '~>3.0.1'
+gem 'gravatar_image_tag'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -40,6 +41,7 @@ group :test do
 # Test gems on Mac OSX (p121 of tutorial)
 	gem 'rb-fsevent', '0.4.3.1', :require => false
 	gem 'growl', '1.0.3'
+	gem 'factory_girl_rails', '1.4.0'
 end
 
 group :production do
