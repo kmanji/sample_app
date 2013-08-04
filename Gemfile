@@ -1,9 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
-gem 'bootstrap-sass', '2.0.0'
+gem 'bootstrap-sass', '2.3'
 gem 'bcrypt-ruby', '~>3.0.1'
 gem 'gravatar_image_tag'
+gem 'therubyracer', :platform => :ruby 
+
 # gem 'twitter-bootstrap-rails', '~>2.0rc0'
 
 
@@ -28,7 +30,6 @@ group :assets do
    gem 'coffee-rails', '3.2.2'
    gem 'uglifier', '1.2.3'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-   gem 'therubyracer', :platform => :ruby 
 end
 
 gem 'jquery-rails'
@@ -42,11 +43,14 @@ group :test do
 	gem 'rb-fsevent', '0.4.3.1', :require => false
 	gem 'growl', '1.0.3'
 	gem 'factory_girl_rails', '1.4.0'
+	gem 'cucumber-rails', '1.2.1', :require => false
+	gem 'database_cleaner', '0.7.0'
 end
 
 group :production do
 	gem 'pg', '0.12.2'
 	gem 'rails_12factor'
+	gem 'execjs'
 end
 
 # To use ActiveModel has_secure_password
