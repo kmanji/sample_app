@@ -41,5 +41,11 @@ describe "Micropost Pages" do
 				expect { click_link "delete" }.should change(Micropost, :count).by(-1)
 			end
 		end
+
+		describe "incorrect user" do 
+			let(:wrong_user) { FactoryGirl.create(:user, :email => "wrong@example.com") }
+			before { visit user_path(wrong_user) }
+        	it { should_not have_link("delete") }
+      	end
 	end
 end
